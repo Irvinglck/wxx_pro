@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    <view class='page_row' >
+      <view class="search">
+        <view class="df search_arr">
+          <icon class="searchcion" size='20' type='search'></icon>
+          <input class="" bindblur="searchName" placeholder="请输入关键字" />
+        </view>
+      </view>
+      <view class='sousuo'  bindtap="suo">
+        搜索
+      </view>
+    </view>
+    <!-- <view class="page-body"> -->
+      <!-- 点 indicator-dots="true" indicator-color="#FFFFFF" indicator-active-color="#8EDAD4" -->
+    <swiper class="swiper" 
+      autoplay="true">
+      <navigator url="/pages/connect/connect" wx:for="{{bannerList}}" wx:key="index" open-type="switchTab">
+        <swiper-item class="swiper-item">
+          <view class="block">
+            <image class="image_l" src="{{item.burl}}" mode="widthFix"></image>
+          </view>
+        </swiper-item>
+      </navigator>
+    </swiper>
+
+     <!-- 产品中心 -->
+     <view class="pro-center-container">
+      <view class="pro-tile">
+        <view class="pro-tile-tip">产品中心</view>
+        <navigator url="/pages/product/product" open-type="switchTab">
+          <view class="pro-tile-tip tip-nav">查看更多</view>
+        </navigator>
+      </view>
+      <!-- 检索条件 -->
+      <view class="pro-search">
+        <view class="pro-search-con">
+          <!-- wei -->
+          <view class='select_box'>
+            <view class='select' catchtap='selectTapColor'>
+              <text class='select_text'>{{selectData[colorIndex]}}</text>
+              <image class='select_img {{colorShow&&"select_img_rotate"}}' src='/images/index/gobottom.png'></image>
+            </view>
+            <view class='option_box' style='height:{{colorShow?(selectData.length>5?300:selectData.length*60):0}}rpx; z-index: 100'>
+              <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}'
+                catchtap='optionTapColor' >{{item}}</text>
+            </view>
+          </view>
+          <view class='select_box'>
+            <view class='select' catchtap='selectTapSize'>
+              <text class='select_text'>{{selectData2[sizeIndex]}}</text>
+              <image class='select_img {{sizeShow&&"select_img_rotate"}}' src='/images/index/gobottom.png'></image>
+            </view>
+            <view class='option_box' style='height:{{sizeShow?(selectData2.length>5?300:selectData2.length*60):0}}rpx; z-index: 100'>
+              <text class='option' wx:for='{{selectData2}}' wx:key='this' data-index='{{index}}'
+                catchtap='optionTapSize'>{{item}}</text>
+            </view>
+          </view>
+          <view class='select_box' style="width: 480rpx">
+            <view class='select' catchtap='selectTapRate'>
+              <text class='select_text'>{{selectData3[rateIndex]}}</text>
+              <image class='select_img {{rateShow&&"select_img_rotate"}}' src='/images/index/gobottom.png'></image>
+            </view>
+            <view class='option_box' style='height:{{rateShow?(selectData3.length>5?300:selectData3.length*62):0}}rpx;'>
+              <text class='option' wx:for='{{selectData3}}' wx:key='this' data-index='{{index}}'
+                catchtap='optionTapRate'>{{item}}</text>
+            </view>
+          </view>
+        
+          <!-- weiend -->
+        </view>
+      </view>
+      <!-- 产品展示 -->
+      <view class="pro-display">
+        <view class="pro-display-item"  wx:for="{{defaultPros}}" wx:key="index">
+          <!-- <navigator class="nav" url="/pages/productDel/productDel?proId={{item.id}}" > -->
+            <view class="dis-image" bindtap="proDetal" data-pro-id="{{item.idattr}}">
+              <image src="https://www.konicaminolta.com.cn{{item.titlepic}}" mode="widthFix"></image>
+            </view>
+          <!-- </navigator> -->
+          <view class="dis-info">
+            <text>{{item.title}}</text>
+          </view>
+        </view>   
+      </view>
+    </view>
+    
+    <!-- 新闻模块 -->
+    <view class="news">
+      <view class="new-title">
+        <view class="new-title-tip">新闻中心</view>
+        <navigator url="/pages/newsDel/newsDel">
+          <view class="new-title-tip tip-nav">查看更多
+          </view>
+        </navigator>
+
+      </view>
+      <view class="new-items">
+        <view class="new-item-content" wx:for="{{newsList}}" wx:key="index">
+          <view class="new-img">
+            <image src="{{item.titleUrl}}"></image>
+          </view>
+          <view class="new-info">
+            <text bindtap="goNewDetail" data-new-url="{{item.nurl}}">{{item.title}}</text>
+            <view class="new-share">
+              <image src="../../images/index/share@3x.png"></image>
+             <view class="btn"> <button class="share-btn" open-type="share">分享</button></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+   
+  </scroll-view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/collect/collect.wxml-->
+<text class="title">我收藏的课程</text>
+<scroll-view scroll-y="true">
+<view class="container">
+  <view class="course_item">
+    <image class="img" src="/images/train/train2.jpg"></image>
+    <view class="info-des">
+      <view class="course-des">
+        <text class="des">自动挡+斯柯达</text>
+        <text class="price">￥6200</text>
+      </view>
+      <view class="btn">去报名</view>
+    </view>   
+  </view>
+  <view class="course_item">
+    <image class="img" src="/images/train/train2.jpg"></image>
+    <view class="info-des">
+      <view class="course-des">
+        <text class="des">自动挡+斯柯达</text>
+        <text class="price">￥6200</text>
+      </view>
+      <view class="btn">去报名</view>
+    </view>   
+  </view>
+  <view class="course_item">
+    <image class="img" src="/images/train/train2.jpg"></image>
+    <view class="info-des">
+      <view class="course-des">
+        <text class="des">自动挡+斯柯达</text>
+        <text class="price">￥6200</text>
+      </view>
+      <view class="btn">去报名</view>
+    </view>   
+  </view>
+
+</view>
+
+</scroll-view>

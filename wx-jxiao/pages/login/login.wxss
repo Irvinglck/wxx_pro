@@ -1,0 +1,52 @@
+/* pages/login/login.wxss */
+.container{
+  height: 100vh;
+  /* 流样式布局 */
+  display: flex;
+  /* 列的形式展示 */
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 30rpx;
+}
+text{
+  font-size: 40rpx;
+  font-weight: 700;
+  color:#F9AA25;
+  /*流式布局*/
+  display: flex;
+  /* 主轴居中 */
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+input{
+  border: 2rpx #F9AA25 solid;
+  height: 90rpx;
+  border-radius: 16rpx;
+  padding-left: 16rpx;
+}
+.code_phone{
+  margin: 16rpx 0;
+  margin-right: 20rpx;
+  /* width: 30%; */
+}
+.code{
+  display: flex;
+  flex-direction: space-around;
+  width: 100%;
+  align-items: center;
+}
+.btn_code{
+  background-color:#F9AA25;
+  height: 90rpx;
+  width: 30%;
+  font-size: 36rpx;
+  color: white;
+}
+.btn_login{
+  margin-top: 450rpx;
+  background-color: #F9AA25;
+  border: 2rpx #F9AA25 solid;
+  height: 90rpx;
+  font-size: 36rpx;
+  color: white;
+}

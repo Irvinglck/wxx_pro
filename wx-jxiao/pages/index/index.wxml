@@ -1,0 +1,122 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    <!-- <view class="page-body"> -->
+        <swiper class="swiper" indicator-dots="true" indicator-color="#FFFFFF" indicator-active-color="#8EDAD4" >
+          <navigator url="/pages/login/login" open-type="switchTab">
+            <swiper-item class="swiper-item">
+              <view class="block">
+                <image class="image_l" src="/images/banner/banner1.jpg" mode="widthFix"></image>
+              </view>
+            </swiper-item>
+          </navigator>
+        
+          <navigator url="/pages/login/login" open-type="switchTab">
+            <swiper-item class="swiper-item">
+              <view class="block">
+                <image class="image_l" src="/images/banner/banner2.jpg" mode="widthFix"></image>
+              </view>
+            </swiper-item>
+          </navigator>  
+
+          <navigator url="/pages/login/login" open-type="switchTab">
+            <swiper-item>
+              <view class="block">
+                <image class="image_l" src="/images/banner/banner3.jpg" mode="widthFix"></image>
+              </view>
+            </swiper-item>
+          </navigator>
+          <navigator url="/pages/login/login" open-type="switchTab">
+            <swiper-item>
+              <view class="block">
+                <image class="image_l" src="/images/banner/banner4.jpg" mode="widthFix"></image>
+              </view>
+            </swiper-item>
+          </navigator>
+        </swiper>
+        <!-- 快捷导航 -->
+        <!-- <view class="nav">
+          <view class="item_mu" wx:for="{{navList}}" wx:key="index">         
+            <image src="{{item.imgUrl}}"></image>
+            <text>{{item.title}}</text>
+          </view>
+        </view> -->
+        <view class="nav">
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/d.png"></image>
+            <text>预约学车</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/e.png"></image>
+            <text>科目一</text>
+          </view>
+        
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/g.png"></image>
+            <text>科目二</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/h.png"></image>
+            <text>教练</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/i.png"></image>
+            <text>考试进度</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/j.png"></image>
+            <text>考试攻略</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/f.png"></image>
+            <text>考试攻略</text>
+          </view>
+          <view class="item_mu" >         
+            <image src="/images/quick_nav/k.png"></image>
+            <text>教练说</text>
+          </view>
+        </view>
+    <!-- </view> -->
+    <text class="title">
+        邮佳欢迎你
+    </text>
+    <view class="train">
+      <view class="introduces">
+        <navigator url="/pages/detail/detail?id=1" open-type="reLaunch">
+          <image src="/images/train/train2.jpg" mode="widthFix"></image>
+          <view class="info-des">
+            <text class="des">自动挡+斯柯达</text>
+            <text class="price">￥6200</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="introduces">
+        <navigator url="/pages/detail/detail?id=2" open-type="reLaunch">
+          <image src="/images/train/train2.jpg" mode="widthFix"></image>
+          <view class="info-des">
+            <text class="des">手动挡+斯柯达</text>
+            <text class="price">￥5800</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="introduces">
+        <navigator url="/pages/detail/detail?id=3" open-type="reLaunch">
+          <image src="/images/train/train2.jpg" mode="widthFix"></image>
+          <view class="info-des">
+            <text class="des">自动挡+迈巴赫</text>
+            <text class="price">￥9999</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="introduces">
+        <navigator url="/pages/detail/detail?id=4" open-type="reLaunch">
+          <image src="/images/train/train2.jpg" mode="widthFix"></image>
+          <view class="info-des">
+            <text class="des">自动挡+迈巴赫</text>
+            <text class="price">8999</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+</scroll-view>
+</view>

@@ -1,0 +1,65 @@
+/* pages/connect/connect.wxss */
+.contain{
+  width: 96%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.logo{
+  width: 100%;
+  height: 280rpx;
+  text-align: center;
+  /* border: 1px solid red; */
+  border-bottom: 20rpx solid #F6F6F6;
+}
+.logo image {
+  width: 280rpx;
+}
+.tel {
+  margin-top:48rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+.tel view{
+  color: #666666;
+}
+.tel text{
+  color: #0165CC;
+}
+.site {
+  margin-top:28rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+.site view{
+  color: #666666;
+}
+.site text{
+  color: #0165CC;
+}
+.qr-code{
+  margin-top: 40rpx;
+  /* border: 1px solid red; */
+  display: flex;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  justify-content: space-around;
+  font-size: 26rpx;
+  color: #666666;
+  text-align: center;
+}
+.sina{
+  width: 180rpx;
+  /* border: 1px solid red; */
+}
+.sina image{
+  margin-top: 10rpx;
+  width: 180rpx;
+}
+.wx{
+  width: 180rpx;
+  /* border: 1px solid red; */
+}
+.wx image{
+  margin-top: 10rpx;
+  width: 180rpx;
+}

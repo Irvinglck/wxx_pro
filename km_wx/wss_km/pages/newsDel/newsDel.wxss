@@ -1,0 +1,7 @@
+/* pages/newsDel/newsDel.wxss */
+@import "/pages/index/index.wxss";
+.container{
+  /* border: 1rpx solid red; */
+  width: 96%;
+  margin: 0 auto;
+}

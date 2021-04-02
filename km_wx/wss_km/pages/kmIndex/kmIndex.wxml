@@ -1,0 +1,5 @@
+<!--pages/kmIndex/kmIndex.wxml-->
+<!-- <text>pages/kmIndex/kmIndex.wxml</text> -->
+   <web-view src="https://www.konicaminolta.com.cn/business/index.html">
+ 
+   </web-view>

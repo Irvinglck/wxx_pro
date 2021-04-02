@@ -1,0 +1,111 @@
+/* pages/mine/mine.wxss */
+.container {
+  /* width: 94%; */
+  height: 2300rpx;
+
+
+}
+
+.content {
+  width: 94%;
+  color: #666666FF;
+  font-size: 32rpx;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.title_img>image {
+  width: 748rpx;
+  height: 200rpx;
+  border: 1rpx dotted #888888;
+}
+
+.page_title {
+  width: 280rpx;
+  height: 80rpx;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #0165CCFF;
+  color: #FFFFFFFF;
+  margin: 20rpx 0;
+}
+
+.title {
+  display: block;
+  color: #0165CCFF;
+  font-weight: 700;
+  font-size: 34rpx;
+  /* border: 1px solid red; */
+  margin-bottom: 10rpx;
+}
+
+/* 竭诚 优化求解 */
+.page-three {
+  margin-top: 26rpx;
+  width: 100%;
+}
+
+.page-three-img {
+  margin-right: 30rpx;
+}
+
+.page-three-img>image {
+  width: 368rpx;
+}
+
+.page-three-title {
+  height: 110rpx;
+
+}
+
+.page-three-title .page_title_info {
+  font-size: 36rpx;
+}
+
+.page-three-title .page_title_des {
+  font-size: 22rpx;
+}
+
+.page-four {
+  margin-top: 26rpx;
+  width: 100%;
+  /* border: 1rpx solid red; */
+}
+
+.page-four-title {
+  height: 110rpx;
+  width: 280rpx;
+
+}
+
+.commons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 20rpx;
+  justify-content: space-around;
+  background-color: #0165CCFF;
+  color: #FFFFFFFF;
+  margin-bottom: 10rpx;
+}
+
+.page-four-img>image {
+  width: 380rpx;
+}
+
+.page-four_des {
+  font-size: 22rpx;
+}
+
+.page-five {
+  margin-top: 26rpx;
+}
+.page-six{
+  margin-top: 26rpx;
+  /* border: 1rpx solid red; */
+}
+.page_six_image> image{
+  width: 100%;
+  /* height: 360rpx; */
+}

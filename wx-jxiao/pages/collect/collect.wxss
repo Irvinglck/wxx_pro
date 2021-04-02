@@ -1,0 +1,67 @@
+.title{
+  display: inline-block;
+  width: 100%;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #F9AA25;
+  text-align: center;
+}
+scroll-view{
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.container .course_item{
+  display: flex;
+  flex-direction: column;
+  margin: 16rpx 0;
+  width: 90%;
+  height: 380rpx;
+  /* border: 5rpx solid #F9AA25; */
+  border-radius: 16rpx;
+}
+.container .course_item .img{
+  width: 100%;
+  height: 380rpx;
+  overflow: hidden;
+  border-radius: 16rpx;
+}
+.container .course_item .info-des{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* border: 1rpx solid red; */
+  justify-content: space-between;
+  padding-top: 10rpx;
+}
+.course-des{
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.container .course_item .btn{
+  width: 180rpx;
+  height: 80rpx;
+  /* border: 1rpx solid red; */
+  font-size: 35rpx;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #F9AA25;
+  border-radius: 16rpx;
+}
+.container .course_item .info-des .des{
+  font-size: 35rpx;
+}
+.container .course_item .info-des .price{
+  color: red;
+  margin-left: 15rpx;
+}

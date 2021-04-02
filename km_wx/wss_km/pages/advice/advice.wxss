@@ -1,0 +1,47 @@
+/* pages/advice/advice.wxss */
+.contain{
+  
+  width: 96%;
+  /* height: 1200rpx; */
+  margin: 0 auto;
+  /* border: 1rpx solid red; */
+}
+.introduce{
+  width: 100%;
+  height: 250rpx;
+  /* border: 1px solid red; */
+}
+.title{
+  width: 100%;
+  height: 48rpx;
+  margin-top: 30rpx;
+  /* border: 1rpx solid red; */
+  text-align: center;
+  color: #333333;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.des {
+  width: 100%;
+  height: 102rpx;
+  color: #999999;
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+.content {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content .item-img image {
+  width: 300rpx;
+  
+  box-shadow: 0rpx 5rpx 5rpx rgba(0,0,0,.3);
+  -moz-box-shadow: 0rpx 5rpx 5rpx rgba(0,0,0,.3);
+ -webkit-box-shadow: 0rpx 5rpx 5rpx rgba(0,0,0,.3);
+  
+}

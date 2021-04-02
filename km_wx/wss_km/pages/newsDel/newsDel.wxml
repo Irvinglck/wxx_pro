@@ -1,0 +1,19 @@
+<!--pages/newsDel/newsDel.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    <view class="new-items">
+      <view class="new-item-content" wx:for="{{newsList}}" wx:key="index">
+        <view class="new-img">
+          <image src="{{item.titleUrl}}"></image>
+        </view>
+        <view class="new-info">
+          <text bindtap="goNewDetail" data-new-url="{{item.nurl}}">{{item.title}}</text>
+          <view class="new-share">
+            <image src="../../images/index/share@3x.png"></image>
+             <view class="btn"> <button class="share-btn" open-type="share">分享</button></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

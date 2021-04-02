@@ -1,0 +1,28 @@
+<!--pages/list/list.wxml-->
+<!-- <text class="top-title">详情页面</text> -->
+<!-- <text class="title-til">学车类型详情页面</text> -->
+<scroll-view scroll-y="true">
+  <view class="container">
+    <view class="menu">
+      <video class="item-video" controls="true" object-fit="cover" src="{{videoUr}}">
+      </video>
+      <text class="title">驾校预览</text>
+    </view>
+    <view class="menu">
+      <image class="img test-img" src="/images/train/train3.jpg" mode="widthFix"></image>
+      <text class="title">驾考路线图</text>
+    </view>
+    <view class="menu">
+      <image class="img detail" src="/images/train/train2.jpg" mode="widthFix"></image>
+      <text class="title">驾校详情</text>
+    </view>
+    <view class="menu">
+      <image class="img detail" src="/images/train/train2.jpg" mode="widthFix"></image>
+      <text class="title">驾校详情</text>
+    </view>
+  </view>
+</scroll-view>
+<view class="btns">
+  <button class="btn-add" bindtap="addCollect">添加收藏</button>
+  <button class="btn-sign-up" bindtap="applyIn">立即报名</button>
+</view>

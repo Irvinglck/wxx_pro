@@ -1,0 +1,18 @@
+<!--pages/productDel/productDel.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    <swiper class="swiper" circular="true"
+      autoplay="true">
+      <view class="banner" wx:for="{{imgsUrl}}" wx:key="index">
+        <swiper-item>
+          <view class="pro-img">
+            <image src="{{item}}" mode="widthFix"></image>
+            <!-- <image src="/images/pro/detail/prodel1.png" mode="widthFix"></image> -->
+          </view>
+        </swiper-item>
+      </view>
+    
+    </swiper>
+    
+  </scroll-view>
+</view>

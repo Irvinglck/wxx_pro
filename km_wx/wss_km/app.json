@@ -1,0 +1,66 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/product/product",
+    
+    "pages/mine/mine",
+    "pages/connect/connect",
+    "pages/advice/advice",
+    "pages/productDel/productDel",
+    "pages/newsDel/newsDel",
+    "pages/newsDel/newsDelWB/newsWebView",
+    "pages/serchPage/serchPage",
+    "pages/kmIndex/kmIndex"
+
+
+  ],
+
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#237AD3",
+    "list": [
+      {
+        "iconPath": "images/index@2x.png",
+        "selectedIconPath": "images/indexs@2x.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/pro@2x.png",
+        "selectedIconPath": "images/pros@2x.png",
+        "pagePath": "pages/product/product",
+        "text": "产品库"
+      },
+      {
+        "iconPath": "images/advice@2x.png",
+        "selectedIconPath": "images/advices@2x.png",
+        "pagePath": "pages/advice/advice",
+        "text": "解决方案"
+      },
+      {
+        "iconPath": "images/consult@2x.png",
+        "selectedIconPath": "images/consults@2x.png",
+        "pagePath": "pages/connect/connect",
+        "text": "联系我们"
+      },
+      {
+        "iconPath": "images/our@2x.png",
+        "selectedIconPath": "images/ours@2x.png",
+        "pagePath": "pages/mine/mine",
+        "text": "关于我们"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "window": {
+    "navigationBarBackgroundColor": "#002852",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "KONICA MINOLTA",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

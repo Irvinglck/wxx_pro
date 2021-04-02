@@ -1,0 +1,80 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true">
+    <view class="title_img">
+      <image src="/images/mine/title_img@2x.png"></image>
+    </view>
+    <!-- 柯尼卡美能达办公系统（中国）有限公司 -->
+    <view class="content">
+      <view class="company_introduce">
+        <text class="title">柯尼卡美能达办公系统（中国）有限公司</text>
+        <view class="company_info">作为有着一百四十年历史的柯尼卡美能达公司，秉承着“创意改变世界”的经营理念，满足客户与社会的需求，为打造更加美好的高品质社会积极贡献自己的力量。从激光胶片到干式激光打印机，到数字化摄影系统CR，直到现在柯尼卡美能达自己的DR产品的横空出世，凝聚着全体柯尼卡人的用心和付出。也标志着柯尼卡美能达公司全面从CR产品到DR的升级，经过临床验证能为客户提供更安全可靠的产品。</view>
+      </view>
+      <!-- 革新 创变时代 -->
+      <view class="page_one">
+        <view class="page_title">革新 创变时代</view>
+        <text class="title">研发前端科技 开启智能未来</text>
+        <view class="company_info">
+          伴随数字化及网络的疾速发展，柯尼卡美能达坚持与时俱进，着眼于未来变革，在创新发展的道路上探索不止。 通过匠心科技，实现未来智能化商务的构想，打造智能办公环境，帮助客户突破旧模式的时空局限，加强团队高效协作， 轻松应对竞争挑战，创享智能商务新时代。
+        </view>
+      </view>
+      <!-- 发展 超越自我 -->
+      <view class="page-two">
+        <view class="page_title">发展 超越自我</view>
+        <text class="title">立足客户需求 洞察市场发展</text>
+        <view class="company_info">
+          作为全球行业领先的数字化整合增值服务商，柯尼卡美能达始终朝着目标不断向前进。秉承“一切以客户为中心”的品牌理念，时刻掌控市场趋势，满足客户多样化需求。一方面坚持不懈的创新产品，另一方便将硬件、解决方案和优势资源有机整合，量身定制数字化整合增值服务。全面构建缤彩高效、智能便捷的数字化商务环境，悉心致力于为客户缔造全新的价值。 通过全体员工多年的同心协力，柯尼卡美能达不断发展壮大，在全国各地创建并完善销售渠道及售后服务网络，致力于为广大客户提供更加全面的商务综合服务。
+        </view>
+      </view>
+      <!-- 竭诚 优化求解 -->
+      <view class="page-three">
+        <view class="page-three-img" style="float: left; clear: both;" >
+          <image src="/images/mine/page_three_image@2x.png" mode="widthFix"></image>
+          <!-- 凭借行业领先的彩色输出设备制造技术，此同时，柯尼卡美能达关注不同办公环境下客户的多样需求，融合硬件制造技术及各类软件产品 -->
+        </view>
+        <view class="page-three-word company_info">
+          <view class="page-three-title commons">
+            <view class="page_title_info">竭诚 优化求解</view>
+            <view class="page_title_des">融合先进技术 聚焦客户需求</view>
+          </view>
+          凭借行业领先的彩色输出设备制造技术，以及丰富全面的产品线和专业的售后服务，柯尼卡美能达致力于为客户提供更多高效优质的产品。
+          与此同时，柯尼卡美能达关注不同办公环境下客户的多样需求，融合硬件制造技术及各类软件产品，力求全方位提供从输出环境的最优化配置到企业内容管理等方面的定制化服务。助力客户提高企业附加值，实现商务模式转型，用真诚的态度和专业的服务赢得信赖。
+        </view>
+      </view>
+      <!-- 热情 耀动出彩 -->
+      <view class="page-four">
+        <view class="page-four-img" style="float: right; clear: both;" >
+          <image src="/images/mine/page_four@2x.png" mode="widthFix"></image>
+        </view>
+        <view class="page-four-word company_info">
+          <view class="page-four-title commons">
+            <view class="page-four_info">热情 耀动出彩</view>
+            <view class="page-four_des">坚持精益求精 创享优质服务</view>
+          </view>
+          凭借行业领先的彩色输出设备制造技术，以及丰富全面的产品线和专业的售后服务，柯尼卡美能达致力于为客户提供更多高效优质的产品。
+          与此同时，柯尼卡美能达关注不同办公环境下客户的多样需求，融合硬件制造技术及各类软件产品，力求全方位提供从输出环境的最优化配置到企业内容管理等方面的定制化服务。助力客户提高企业附加值，实现商务模式转型，用真诚的态度和专业的服务赢得信赖。
+        </view>      
+      </view>
+      <!-- 尽责 构筑美好 -->
+      <view class="page-five">
+        <view class="page-three-img" style="float: left; clear: both;" >
+          <image src="/images/mine/page_five@2x.png" mode="widthFix"></image>
+          <!-- 凭借行业领先的彩色输出设备制造技术，此同时，柯尼卡美能达关注不同办公环境下客户的多样需求，融合硬件制造技术及各类软件产品 -->
+        </view>
+        <view class="page-three-word company_info">
+          <view class="page-three-title commons">
+            <view class="page_title_info">尽责 构筑美好</view>
+            <view class="page_title_des">投身社会公益 构筑美好社会</view>
+          </view>
+          在追求企业发展的同时， 柯尼卡美能达始终肩负 企业责任感心系社会， 坚持关爱与支援特殊儿童 群体。 温暖牵手中国各 地辅读学校，陆续捐赠打 印机、一体机及学习用品，为孩子们创造缤彩的 教学环境。此外，定期举办特殊儿童绘画大赛，邀请各特教机构广泛参与，为孩子们搭建自我展示及学习交流的平台，帮助他们增强与社会沟通的信心。
+          柯尼卡美能达聚焦未来生态环境，制定“环境展望2050”环保目标，严格把控产品生命周期各环节对环境造成的影响，从整体上减轻对环境的负荷。 同时积极践行“中期环保计划2019”，贯彻落实以环保理念指导企业活动，采用匠心高科技打造环保型产品，促进节约资源、降低污染，携手共创可持续发展的绿色未来。
+        </view>
+      </view>
+      <!-- page-six -->
+      <view class="page-six">
+        <view class="page_six_image"><image src="/images/mine/page_six2x.png" mode="widthFix"></image></view>
+        <view class="company_info">面对社会竞争的加剧及接连不断的挑战，柯尼卡美能达全面整合集团资源，充分发挥One Konica Minolta的综合实力，打破固化思维聚势而发。将“创意”转变为“有型”，拓展新的业务形态，持续散发企业的活力，在全球各个事业领域，为客户、合作伙伴及社会缔造新价值。</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

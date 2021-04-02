@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/login/login",
+    "pages/detail/detail"
+    
+   
+   
+  ],
+  "subPackages": [
+    {
+      "root": "cat",
+      "pages": [
+        "cat/cat"
+      ]
+    },
+    {
+      "root": "list",
+      "pages": [
+        "list/list"
+      ]
+    }
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_sel.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/collection.png",
+        "selectedIconPath": "images/collection_sel.png",
+        "pagePath": "pages/collect/collect",
+        "text": "课程收藏"
+      },
+      {
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_sel.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "window": {
+    "navigationBarBackgroundColor": "#F79E38",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "上海邮佳驾校",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

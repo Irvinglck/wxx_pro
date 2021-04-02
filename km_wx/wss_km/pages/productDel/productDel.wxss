@@ -1,0 +1,131 @@
+/* pages/productDel/productDel.wxss */
+.container {
+  width: 96%;
+  /* height: 900rpx; */
+  /* border: 1rpx solid red; */
+  margin: 0 auto;
+}
+
+.swiper {
+  /* margin-top: 40rpx; */
+  width: 98%;
+  height: 1270rpx;
+  /* border: 1rpx solid red; */
+}
+
+.banner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner .pro-img>image {
+  width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- */
+.pro-info {
+  display: block;
+  width: 98%;
+  height: 100rpx;
+  line-height: 100rpx;
+
+  border-top: 1rpx solid #EEEEEEFF;
+  /* border: 1rpx solid red; */
+}
+
+.word {
+  color: #333333FF;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+/* 特点描述 */
+.feature {
+
+  border-top: 1rpx solid #EEEEEEFF;
+  /* border: 1rpx solid red; */
+  height: 230rpx;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 78%;
+  /* border: 1rpx solid red; */
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.icon-image {
+  width: 16%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-image>image {
+  border: 1rpx dotted #888888;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.icon-des {
+  display: block;
+  color: #333333FF;
+  font-size: 30rpx;
+}
+
+/* 产品咨询 & 销售咨询 */
+.wrap-btns{
+  margin-top: 30rpx;
+  height: 140rpx;
+  border-top: 1rpx solid #EEEEEEFF;
+  border-bottom: 1rpx solid #EEEEEEFF;
+ 
+}
+.btns {
+  width: 500rpx;
+  height: 140rpx;
+  /* border: 1rpx solid red; */
+  /* line-height: 140rpx; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns .sale-consult,.pro-instruct {
+  width: 220rpx;
+  height: 80rpx;
+  display: inline-block;
+  font-size: 34rpx;
+  border: 1rpx solid #666666FF;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 8rpx;
+}
+/* 产品参数说明 */
+.pro-params{
+  margin-top: 20rpx;
+  width: 700rpx;
+  
+}
+.pro-params> image{
+  margin-top: 20rpx;
+  width: 700rpx;
+}

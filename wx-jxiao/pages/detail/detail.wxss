@@ -1,0 +1,63 @@
+.title-til{
+  display: inline-block;
+  /* border: 1px red solid; */
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+  color: #F79E38;
+}
+
+scroll-view{
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  width: 100%;
+  padding-top: 30rpx;
+  margin-bottom: 200rpx;
+}
+.container .menu{
+  /* width: 90%; */
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.menu .item-video,.img{
+  border-radius: 18rpx;
+  width: 100%;
+}
+.menu .title{
+  color: #F79E38;
+  font-size: 35rpx;
+  font-weight: 700;
+  margin: 16rpx 0;
+}
+.btns{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 40rpx 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+
+
+}
+.btns .btn-add{
+  background-color: #F79E38;
+  color: white;
+  width: 45%;
+  margin-left: 10rpx;
+}
+.btns .btn-sign-up{
+  background-color: #F79E38;
+  color: white;
+  width: 45%;
+  margin-right: 10rpx;
+}

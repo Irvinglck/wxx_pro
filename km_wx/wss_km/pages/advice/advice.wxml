@@ -1,0 +1,23 @@
+<!--pages/advice/advice.wxml-->
+<view class="contain">
+    <view class="introduce">
+      <view class="title">解决方案</view>
+      <view class="des">
+       <text> 尖端科技，革新突破 \n 柯尼卡美能达提供一系列专业解决方案，\n 为您的企业打造智能高效、舒适稳定的办公环境。</text>
+      </view>
+    </view>
+    <view class="content">
+      <view class="item-img" bindtap="print">
+        <image src="/images/advice/dygl@2x.png" mode="widthFix"></image>
+      </view>
+      <view class="item-img" bindtap="cont">
+        <image src="/images/advice/nrgl@2x.png" mode="widthFix"></image>
+      </view>
+      <view class="item-img" bindtap="self">
+        <image src="/images/advice/zzwy@2x.png" mode="widthFix"></image>
+      </view>
+      <view class="item-img" bindtap="remote">
+        <image src="/images/advice/ycfw@2x.png" mode="widthFix"></image>
+      </view>
+    </view>
+</view>
