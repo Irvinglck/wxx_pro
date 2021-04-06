@@ -31,6 +31,16 @@ Page({
         that.setData({
           proMixList:res.data.data
         })
+        if(that.data.proMixList.length==0){
+          wx.showToast({
+            title: '无匹配该内容得产品',
+          })
+           setTimeout(()=>{
+            wx.switchTab({
+              url: '../../pages/index/index'
+            })
+           },2000)
+        }
       }
     })
   },
