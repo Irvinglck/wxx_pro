@@ -37,7 +37,7 @@ Page({
     this.setData({
       searchValue: e.detail.value
     })
-    console.log(this.data.searchValue)
+    // console.log()
   },
   suo:function(){
  
