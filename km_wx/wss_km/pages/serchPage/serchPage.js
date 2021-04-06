@@ -34,6 +34,107 @@ Page({
       }
     })
   },
+  downPdf: function(e) {
+    var that=this;
+    var proId=e.currentTarget.dataset.proId;
+    console.log("downPdf------------proId"+proId);
+    wx.showLoading({
+      title: '加载中',
+    });
+    wx.request({
+      url: util.reqUrl()+'/wx/getProDetail?proId='+proId,
+      data:{},
+      method:'GET',
+      success: function(res){
+        console.log(res.data.code);
+        console.log(res.data.data);
+        if(res.data.code==200){
+          // that.setData({
+          //   proDetailId: res.data.data.proid
+          // })
+          var flag=res.data.data.havepdf;
+          var downPdf=res.data.data.downpdf;
+          console.log(downPdf+"下载标志"+flag)
+          if(flag){
+            that.downPdfFile(downPdf)
+          }else{
+            wx.showToast({
+              title: '此产品暂无参数信息可以下载',
+            })
+          }
+          
+          console.log("getProDetailOne-----proDetailId----")
+          console.log(that.data.proDetailId);
+        }else{
+          wx.showToast({
+            title: '此产品暂无参数信息可以下载',
+          })
+          return;
+        }
+      },
+      fail: function(error){
+        console.log(error)
+      }
+    })
+
+  },
+  downPdfFile:function (url) {
+    var urlPath='https://km-wx-1304476764.cos.ap-nanjing.myqcloud.com/PRODUCT/pdf/'+url;
+    wx.downloadFile({
+      url: urlPath, 
+      header: {
+          'content-type': 'application/json',
+        },
+      success (res) { 
+        wx.hideLoading()
+        const filePath = res.tempFilePath
+        wx.openDocument({
+          filePath: filePath,
+          success: function (res) {
+            console.log('打开文档成功')
+          }
+        })
+      },
+      fail(fail) {
+        console.log(fail)
+        console.log("------fail---")
+      },
+      complete(com){
+        console.log(JSON.stringify(com))
+        console.log("------complete---")
+      }
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
+  },
+   //获取详情页面
+   getProDel:function(e){
+    // console.log(e.currentTarget.dataset)
+    var proId=e.currentTarget.dataset.proId;
+    wx.request({
+      url: util.reqUrl()+'/wx/getProDetail?proId='+proId,
+      data:{},
+      method:'GET',
+      success: function(res){
+        console.log(res.data.code);
+        console.log(res.data);
+        if(res.data.code===200){
+          wx.navigateTo({
+            url: '../../pages/productDel/productDel?proId='+proId
+          })
+        }else{
+          wx.showToast({
+            title: '此产品暂无详情参数',
+          })
+          return;
+        }
+      },
+      fail: function(error){
+        console.log(error)
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

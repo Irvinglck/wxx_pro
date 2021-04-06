@@ -143,11 +143,18 @@ Page({
     var that = this;
     that.setData( { currentTab: e.detail.current });
 },
-
+searchName:function(e){
+  console.log(e.detail.value)
+  this.setData({
+    searchValue: e.detail.value
+  })
+  console.log(this.data.searchValue)
+  console.log("this.data.searchValue")
+},
 suo:function(){
  
   var sValue=this.data.searchValue;
-  console.log(sValue)
+
   if(sValue==undefined||JSON.stringify(sValue)=="{}"||sValue==''){
     wx.showToast({
       title: '请输入您要筛选的内容',
@@ -199,12 +206,7 @@ getProList:function(proId){
     }
   })
 },
-searchName:function(e){
-  // console.log(e.detail.value.sValue)
-  this.setData({
-    searchValue: e.detail.value
-  })
-},
+
   //事件处理函数
   bindViewTap: function() {
    
@@ -245,7 +247,7 @@ searchName:function(e){
   },
   onShareAppMessage: function(option){
     console.log(option);
-    console.log("option5555555555");
+    // console.log("option5555555555");
     let obj = {
       title: '柯尼卡美能达',
       path: '/pages/index/index',

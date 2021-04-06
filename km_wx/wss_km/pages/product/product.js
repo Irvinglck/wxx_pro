@@ -9,7 +9,8 @@ Page({
     currentTab: 0,
     sendList:[],
     proList:[],
-    proDetailId:''//产品列表
+    proDetailId:'',//产品列表
+    searchValue:'',
   },
   select: {
     page: 1,
@@ -32,10 +33,11 @@ Page({
     that.getProList('38')
   },
   searchName:function(e){
-    // console.log(e.detail.value.sValue)
+    console.log(e.detail.value)
     this.setData({
       searchValue: e.detail.value
     })
+    console.log(this.data.searchValue)
   },
   suo:function(){
  
@@ -235,6 +237,7 @@ Page({
       method:'GET',
       success: function(res){
         console.log(res.data.code);
+        console.log("ppppppppppppp");
         if(res.data.code==200){
           wx.navigateTo({
             url: '../../pages/productDel/productDel?proId='+proId

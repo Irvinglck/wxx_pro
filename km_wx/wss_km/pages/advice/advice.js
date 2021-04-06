@@ -38,7 +38,7 @@ Page({
   },
   cont:function(){
     console.log("cont")
-    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions1';
+    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions2';
     wx.navigateTo({
       url:'../../pages/newsDel/newsDelWB/newsWebView?newUrl='+newUrl,
       success:function(suc) {
@@ -52,7 +52,7 @@ Page({
   },
   self:function(){
     console.log("self")
-    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions1';
+    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions3';
     wx.navigateTo({
       url:'../../pages/newsDel/newsDelWB/newsWebView?newUrl='+newUrl,
       success:function(suc) {
@@ -66,7 +66,7 @@ Page({
   },
   remote:function(){
     console.log("remote")
-    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions1';
+    var newUrl='https://www.konicaminolta.com.cn/business/solution-case/solutions4';
     wx.navigateTo({
       url:'../../pages/newsDel/newsDelWB/newsWebView?newUrl='+newUrl,
       success:function(suc) {
