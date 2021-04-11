@@ -138,11 +138,12 @@
 .rate1{
   color: #2D94FF;
   border: 1rpx solid #2D94FF;
+  margin-right: 10rpx;
 }
 .rate2{
   color:#666666;
   border: 1rpx solid #666666;
-  margin-left: 10rpx;
+  /* margin-left: 10rpx; */
 }
 .down-cron{
   margin-top: 4rpx;

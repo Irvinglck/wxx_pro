@@ -29,10 +29,11 @@
         </view>
         <view class="info">
           <view class="info-title">{{item.title}}</view>
-          <view class="rt"><text class="rate1">{{item.outputSpeedColor}}页/分钟</text>
-            <text class="rate2">{{item.outputSpeedMono}}页/分钟</text></view>
+          <view class="rt">
+            <text wx:if="{{item.outputSpeedColor!=0}}" class="rate1">{{item.outputSpeedColor}}页/分钟</text>
+            <text wx:if="{{item.outputSpeedMono!=0}}" class="rate2">{{item.outputSpeedMono}}页/分钟</text>
+          </view>
           <view class="down-cron" data-type="pdf" data-pro-id="{{item.idattr}}"
-          data-url="https://km-wx-1304476764.cos.ap-nanjing.myqcloud.com/PRODUCT/print/pdf/4.pdf"
           bindtap="downPdf">彩页下载<image src="/images/pro/down-corn@2x.png"></image></view>
         </view>
         <!-- <navigator url="/pages/productDel/productDel"> -->
