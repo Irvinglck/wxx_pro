@@ -25,7 +25,7 @@
     <view class="pro-item" wx:for="{{proList}}" wx:key="index">
         <view class="info-img">
           <!-- <image src="../../images/pro/pro_img_title.png"></image> -->
-          <image src="https://www.konicaminolta.com.cn{{item.titlepic}}"></image>
+          <image src="https://www.konicaminolta.com.cn{{item.titlepic}}" mode="widthFix"></image>
         </view>
         <view class="info">
           <view class="info-title">{{item.title}}</view>

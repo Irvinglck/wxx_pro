@@ -109,10 +109,12 @@
   width: 172rpx;
   height: 172rpx;
   border: 1rpx solid #EDEDED;
+  text-align: center;
+  line-height: 226rpx;
 }
 .pro-items .pro-item .info-img> image{
-  width: 99%;
-  height: 98%;
+  width: 130rpx;
+  /* height: 98%; */
 }
 .pro-items .pro-item .info {
   width: 60%;
