@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class="banner">
+      <swiper class="swiper" autoplay="true">
+        <swiper-item class="swiper-item">
+          <view class="block">
+            <image class="img" src="/images/temp/banner.jpg" mode="widthFix" ></image>
+          </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+          <view class="block">
+            <image class="img" src="/images/temp/banner.jpg" mode="widthFix" ></image>
+          </view>
+        </swiper-item>
+    </swiper>
+    </view>
+</view>
