@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/banDel/banDel",
     "pages/work/work",
     "pages/msg/msg",
     "pages/contacts/contacts",

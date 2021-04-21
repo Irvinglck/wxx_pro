@@ -1,6 +1,7 @@
 .container{
-   background-color: #FAFAFA;
+   background-color: #F5F2F0;
    width: 100%;
+   /* height: 5000rpx; */
    height: auto;
    margin:0 auto;
    /* border: 1px solid red; */
@@ -12,4 +13,147 @@
 }
 .img{
    width: 100%;
+}
+.intro{
+   margin-left: 30rpx;
+   height: 80rpx;
+   display: inline-block;
+   line-height: 30rpx;
+   font-size: 28rpx;
+}
+.map{
+   width: 70%;
+   height: 130rpx;
+   /* border: 1px solid red; */
+   margin: 30rpx auto 0rpx;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 90rpx;
+   background-color: #FFFFFF;
+   box-shadow: darkgrey 10rpx 10rpx 30rpx 5rpx;
+   
+}
+.logo-img{
+   width: 50%;
+   height: 100%;
+   /* border: 1px solid red; */
+}
+.logo-img > image{
+   margin-left: 20rpx;
+   /* border: 1px solid red; */
+   border-radius: 90rpx;
+   width: 82%;
+}
+.clock{
+   /* width: ; */
+   height: 100%;
+   width: 50%;
+   text-align: center;
+   
+   /* border: 1px solid red; */
+}
+.txt{
+   margin-top: 34rpx;
+   display: inline-block;
+   width: 80%;
+   height: 50%;
+   line-height: 70rpx;
+   background-color: #6A6BFE;
+   font-size: 30rpx;
+   color: white;
+   border-radius: 40rpx;
+}
+.ser-module{
+   background-color: #FFFFFF;
+   width: 94%;
+   height: 460rpx;
+   /* border: 1px solid red; */
+   margin: 24rpx auto;
+   border-radius: 30rpx;
+   box-shadow: darkgrey 5rpx 5rpx 30rpx 2rpx;
+}
+.self-server{
+   width: 100%;
+   height: 380rpx;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.quick{
+   /* display: flex; */
+   text-align: center;
+   /* border: 1px solid red; */
+   font-size: 26rpx;
+   /* color: white; */
+}
+.quick-img{
+   width: 142rpx;
+   /* height: 100rpx; */
+   /* border: 1px solid red; */
+}
+.quick-img > image{
+   width: 70%;
+}
+.des{
+   margin-top: 16rpx;
+}
+
+.future{
+   width: 92%;
+   height: 500rpx;
+   margin: 0 auto;
+   /* border: 1px solid red; */
+}
+.txt-info{
+   display: inline-block;
+   margin-bottom: 10rpx;
+}
+.item{
+   width: 100%;
+   height: 140rpx;
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 28rpx;
+   background-color: #FFFFFF;
+   margin: 10rpx 0;
+   /* line-height: 140rpx; */
+
+}
+.info-left{
+   margin-left: 14rpx;
+   width: 66%;
+   height: 100rpx;
+   /* border: 1px solid red; */
+}
+.title{
+   font-size: 30rpx;
+   font-weight: 700;
+   padding: 10rpx 0;
+}
+.reason{
+   display: -webkit-box;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   word-wrap: break-word;
+   white-space: normal !important;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+}
+.info-right{
+   padding-right: 20rpx;
+   text-align: center;
+   width: 33%;
+   height: 100rpx;
+   /* border: 1px solid red; */
+}
+.undone{
+   
+   color: #FA7536;
 }

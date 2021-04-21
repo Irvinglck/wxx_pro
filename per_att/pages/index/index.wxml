@@ -1,18 +1,150 @@
 <!--index.wxml-->
 <view class="container">
-
+  <scroll-view scroll-y="true">
+    <!-- banner模块 -->
     <view class="banner">
       <swiper class="swiper" autoplay="true">
-        <swiper-item class="swiper-item">
+        <navigator url="/pages/banDel/banDel">
+          <swiper-item class="swiper-item">
           <view class="block">
             <image class="img" src="/images/temp/banner.jpg" mode="widthFix" ></image>
           </view>
         </swiper-item>
-        <swiper-item class="swiper-item">
+        </navigator>
+        <navigator url="/pages/banDel/banDel">
+          <swiper-item class="swiper-item">
           <view class="block">
             <image class="img" src="/images/temp/banner.jpg" mode="widthFix" ></image>
           </view>
         </swiper-item>
+        </navigator>
+        
     </swiper>
     </view>
+    <!-- 定位模块 -->
+    <view class="map">
+      <view class="logo-img">
+        <image class="logo" src="/images/temp/map_loc.jpg" mode="widthFix"></image>
+      </view>
+      <view class="clock">
+        <text class="txt">考勤签到</text>
+      </view>
+    </view>
+    <!-- 自助服务 -->
+   <view class="ser-module">
+     <text class="intro">
+        自助服务
+     </text>
+     <view class="self-server">
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/check.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">考勤</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/more_work.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">加班</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/money.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">财务</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/apply_holi.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">调休</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/out_tra.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">请假</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/holiday.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">出差</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/out_tra.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">外出</text>
+        </view>
+      </view>
+      <view class="quick">
+        <view class="quick-img">
+          <image src="/images/quick/more.png" mode="widthFix"></image>
+        </view>
+        <view class="des">
+          <text class="info">更多</text>
+        </view>
+      </view>
+    </view>
+   </view>
+   <!-- 待办 -->
+   <view class="future">
+      <text class="txt-info">待办</text>
+      <view class="item">
+          <view class="info-left">
+            <view class="title">李丽茹提交一个请假申请</view>
+             <view class="reason">这里是操作的详细描述，详细记录了操作原因</view>
+          </view>
+        <view class="info-right">
+          <text class="time">2018-08-12\r\n13:24</text>
+          <view class="undone">审批中</view>
+        </view>
+      </view>
+      <view class="item">
+          <view class="info-left">
+            <view class="title">李丽茹提交一个请假申请</view>
+             <view class="reason">这里是操作的详细描述，详细记录了操作原因</view>
+          </view>
+        <view class="info-right">
+          <text class="time">2018-08-12\r\n13:24</text>
+          <view class="undone">审批中</view>
+        </view>
+      </view>
+      <view class="item">
+          <view class="info-left">
+            <view class="title">李丽茹提交一个请假申请</view>
+             <view class="reason">这里是操作的详细描述，详细记录了操作原因</view>
+          </view>
+        <view class="info-right">
+          <text class="time">2018-08-12\r\n13:24</text>
+          <view class="undone">审批中</view>
+        </view>
+      </view>
+      <view class="item">
+          <view class="info-left">
+            <view class="title">李丽茹提交一个请假申请</view>
+             <view class="reason">这里是操作的详细描述，详细记录了操作原因</view>
+          </view>
+        <view class="info-right">
+          <text class="time">2018-08-12\r\n13:24</text>
+          <view class="undone">审批中</view>
+        </view>
+      </view>
+   </view>
+   </scroll-view>
 </view>

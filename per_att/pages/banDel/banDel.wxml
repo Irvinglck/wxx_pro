@@ -1,0 +1,4 @@
+<!--pages/banDel/banDel.wxml-->
+<view class="container">
+   <image src="/images/temp/banDel.png" mode="widthFix"></image>
+</view>
