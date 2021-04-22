@@ -37,12 +37,14 @@
      </text>
      <view class="self-server">
       <view class="quick">
-        <view class="quick-img">
+        <navigator url="/pages/index/quick/check">
+          <view class="quick-img">
           <image src="/images/quick/check.png" mode="widthFix"></image>
         </view>
         <view class="des">
           <text class="info">考勤</text>
-        </view>
+        </view></navigator>
+        
       </view>
       <view class="quick">
         <view class="quick-img">
@@ -122,7 +124,7 @@
           </view>
         <view class="info-right">
           <text class="time">2018-08-12\r\n13:24</text>
-          <view class="undone">审批中</view>
+          <view class="undone un">未审批</view>
         </view>
       </view>
       <view class="item">
@@ -132,7 +134,7 @@
           </view>
         <view class="info-right">
           <text class="time">2018-08-12\r\n13:24</text>
-          <view class="undone">审批中</view>
+          <view class="undone un">未审批</view>
         </view>
       </view>
       <view class="item">

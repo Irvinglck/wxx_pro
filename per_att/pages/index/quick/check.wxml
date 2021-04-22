@@ -1,0 +1,58 @@
+<!--pages/index/quick/check.wxml-->
+<!-- <text>pages/index/quick/check.wxml</text> -->
+<view class="container">
+   <!-- 日历 -->
+   <view class="cal">
+      <calendar calendar-style="calendar" weeks-type="full-en" header-style="header"
+           board-style="board" next="{{false}}" prev="{{false}}"
+            show-more-days="{{true}}" binddayClick="dayClick" days-color="{{dayStyle}}"
+     />
+     <view class="month-check" bindtap="monthCheck">月考勤</view>
+   </view>
+   <!-- 考勤说明 -->
+   <view class="check-info">
+      <view class="left-info">
+         <view class="isSign item-info">
+            <text>可补签： 10次</text>
+         </view>
+         <view class="isSign item-info">
+            <text>上班时间： 08:57:45</text>
+         </view>
+         <view class="isSign item-info">
+            <text>总工时： 8小时</text>
+         </view>
+         <view class="isSign item-info">
+            <text>备 注： </text>
+         </view>
+      </view>
+      <view class="right-info">
+         <view class="leftFree item-info">
+            <text>剩  余： 3次</text>
+         </view>
+         <view class="leftFree item-info">
+            <text>下班时间： 18:02:12</text>
+         </view>
+         <view class="leftFree item-info">
+            <text>类 型： 正常考情</text>
+         </view>
+      </view>
+   </view>
+   <!-- 签到轨迹 -->
+   <view class="sign-in">
+      <text class="sign-title">签到轨迹</text>
+      <view class="sign-start">
+         <view class="start-time">08:57</view>
+         <view class="start-content">
+            <view class="s-address">签到地点: 上海市徐汇区龙漕路299号</view>
+            <view class="s-content">工作内容: 跟踪项目进度,确保项目按照计划完成</view>
+         </view>
+      </view>
+      <view class="sign-end">
+         <view class="end-time">18:00</view>
+         <view class="end-content">
+            <view class="s-address">签到地点: 上海市徐汇区龙漕路299号</view>
+            <view class="s-content">工作内容: 跟踪项目进度,确保项目按照计划完成</view>
+         </view>
+      </view>
+   </view>
+</view>

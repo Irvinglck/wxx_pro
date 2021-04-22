@@ -154,6 +154,8 @@
    /* border: 1px solid red; */
 }
 .undone{
-   
-   color: #FA7536;
+   color: #EE7A24;
+}
+.un{
+   color:#E84A76;
 }
