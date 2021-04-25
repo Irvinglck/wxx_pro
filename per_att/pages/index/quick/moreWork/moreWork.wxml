@@ -1,0 +1,60 @@
+<!--pages/index/quick/moreWork/moreWork.wxml-->
+<!-- <text>pages/index/quick/moreWork/moreWork.wxml</text> -->
+<view class="container">
+   <view class="header">
+      <text>加班申请</text>
+      <text>加班历史</text>
+   </view>
+   <view class="work-form">
+      <view class="apply">
+         <text>申请人</text>
+         <text>李茹</text>
+      </view>
+      <view class="userName">
+         <text>用户名</text>
+         <text>lck</text>
+      </view>
+      <!-- <view class="dept" bindtap="selectDept">
+
+         <view class="title">部门
+         </view>
+         <view class="content">
+            <text>请选择 ></text>
+         </view>
+      </view> -->
+      
+      <picker class="dept-picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+         <view class="picker-item dept">
+            <text class="picker-title" style="margin-left:-10rpx">部门</text>
+            <view class="picker">
+               <text class="picker-tontent">{{array[index]}} </text>
+               <text class="picker-select-flag" wx:if="{{selectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+      <picker class="dept-picker" mode="time" bindchange="bindchangeTime">
+         <view class="picker-item dept">
+            <text class="picker-title" style="margin-left:-10rpx">开始时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{startTime}} </text>
+               <text class="picker-select-flag" wx:if="{{selectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+   </view> 
+   <view class="onSubmit">提交</view>
+
+   <view class="dept-dialog" wx:if="{{deptShow==1}}">
+      <view class="section">
+         <!-- <view class="section__title">普通选择器</view> -->
+         <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+               当前选择：{{array[index]}}
+            </view>
+         </picker>
+      </view>
+   </view>
+
+</view>

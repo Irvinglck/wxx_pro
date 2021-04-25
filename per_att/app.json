@@ -1,10 +1,11 @@
 {
   "pages":[
     
-  
+    
     "pages/index/index",
     "pages/banDel/banDel",
     "pages/index/quick/check",
+    "pages/index/quick/moreWork/moreWork",
     "pages/work/work",
     "pages/msg/msg",
     "pages/contacts/contacts",

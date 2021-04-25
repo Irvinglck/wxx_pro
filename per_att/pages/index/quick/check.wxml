@@ -55,4 +55,31 @@
          </view>
       </view>
    </view>
+   <!-- 月考勤弹窗 -->
+   <view class="month-check-dialog" wx:if="{{alter==1}}" bindtap="dialog">
+      <view class="employeeId dialog-item">
+         <text class="empl">员工编号</text>
+         <text class="empl">65578</text>
+      </view>
+      <view class="employeeId dialog-item">
+         <text class="empl">考勤比率</text>
+         <text class="empl">100%</text>
+      </view>
+      <view class="employeeId dialog-item">
+         <text class="empl">标准工时</text>
+         <text class="empl">8小时</text>
+      </view>
+      <view class="employeeId dialog-item">
+         <text class="empl">请假工时</text>
+         <text class="empl">0小时</text>
+      </view>
+      <view class="employeeId dialog-item">
+         <text class="empl">加班工时</text>
+         <text class="empl">0小时</text>
+      </view>
+      <view class="employeeId dialog-item">
+         <text class="empl">特殊加班工时</text>
+         <text class="empl">0小时</text>
+      </view>
+   </view>
 </view>

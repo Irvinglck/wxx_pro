@@ -1,0 +1,76 @@
+/* pages/index/quick/moreWork/moreWork.wxss */
+.container{
+   width: 96%;
+   margin: 0 auto;
+   /* border: 1px solid red; */
+}
+.header{
+   width: 100%;
+   height: 100rpx;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font: 28rpx;
+   font-weight: 700;
+   line-height: 80rpx;
+   box-sizing: border-box;
+   padding: 0 14rpx;
+   border-bottom: 24rpx solid #EDEDED;
+}
+.header >text:nth-child(2){
+   color: #5F75E2;
+   font-weight: 400;
+}
+/* .work-form > view{
+   width: 100%;
+   height: 100rpx;
+   
+   border-bottom: 1px solid #E4E4E4;
+   font-size: 36rpx;
+} */
+.work-form :nth-child(-n+2){
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   box-sizing: border-box;
+   padding: 0 14rpx;
+   line-height: 100rpx;
+}
+.dept-picker{
+   width: 100%;
+   height: 100rpx;
+   /* border: 1rpx solid red; */
+}
+.picker-item{
+   /* border: 1rpx solid red; */
+   width: 100%;
+   height: 100rpx;
+   /* position: relative; */
+   line-height: 100rpx;
+}
+
+.picker-tontent,.picker-select-flag{ 
+   margin-right: -26rpx;
+}
+.picker-select-flag{
+  
+   color: #D9D9DB;
+}
+
+.necess-flag {
+   color: red;
+}
+.onSubmit{
+   width: 80%;
+   height: 70rpx;
+   /* border: 1px solid red; */
+   background-color: #5F75E2;
+   text-align: center;
+   line-height: 70rpx;
+   border-radius: 35rpx;
+   margin: 0 auto;
+   color: #ffffff;
+   margin-top: 40rpx;
+}
+
+

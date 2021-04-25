@@ -47,12 +47,15 @@
         
       </view>
       <view class="quick">
-        <view class="quick-img">
-          <image src="/images/quick/more_work.png" mode="widthFix"></image>
-        </view>
-        <view class="des">
-          <text class="info">加班</text>
-        </view>
+        <navigator url="/pages/index/quick/moreWork/moreWork">
+            <view class="quick-img">
+              <image src="/images/quick/more_work.png" mode="widthFix"></image>
+            </view>
+            <view class="des">
+              <text class="info">加班</text>
+            </view>
+        </navigator>
+       
       </view>
       <view class="quick">
         <view class="quick-img">

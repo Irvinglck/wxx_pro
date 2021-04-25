@@ -9,6 +9,7 @@ Page({
          {month: 'current', day: new Date().getDate(), color: 'white', background: '#5F75E2'},
          { month: 'current', day: new Date().getDate(), color: 'white', background: '#5F75E2' }
        ],
+       alter:0,
    },
     //给点击的日期设置一个背景颜色
   dayClick: function (event) {
@@ -35,10 +36,18 @@ Page({
  },
 //月考勤
 monthCheck:function(){
-   wx.showModal({
-     title:'月考勤，从后台拉去记录',
-     content:'后台拉去集合数据'
-   })
+  //  wx.showModal({
+  //    title:'月考勤，从后台拉去记录',
+  //    content:'后台拉去集合数据'
+  //  })
+  this.setData({
+    alter:1
+  })
+},
+dialog:function(){
+  this.setData({
+    alter:0
+  })
 },
 
    /**
