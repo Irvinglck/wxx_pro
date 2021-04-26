@@ -1,2 +1,104 @@
-<!--pages/index/quick/outLeave/outLeave.wxml-->
-<text>pages/index/quick/outLeave/outLeave.wxml</text>
+<view class="container">
+   <view class="header">
+      <text>申请加班</text>
+      <text>加班历史</text>
+   </view>
+   <view class="preview">
+      <view class="common">
+        <view class="left-time">
+           <text class="time">10</text>
+           <text class="unit">天</text>
+        </view>
+        <view class="intro">带薪年假</view>
+      </view>
+      <view class="special">
+         <view class="left-time">
+           <text class="time">0</text>
+           <text class="unit">小时</text>
+        </view>
+        <view class="intro">申请工时</view>
+
+      </view>
+   </view>
+   <view class="work-form">
+      <view class="apply line_bottom">
+         <text>申请人</text>
+         <text>李茹</text>
+      </view>
+      <view class="userName line_bottom">
+         <text>用户名</text>
+         <text>lck</text>
+      </view>
+      
+      <picker class="dept-picker  line_bottom" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+         <view class="picker-item dept">
+            <text class="picker-title">部门</text>
+            <view class="picker">
+               <text class="picker-tontent">{{array[index]}} </text>
+               <text class="picker-select-flag" wx:if="{{selectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+      <picker class="dept-picker  line_bottom" bindchange="bindOutLeaveTypeChange" value="{{typeIndex}}" range="{{typeArray}}">
+         <view class="picker-item dept">
+            <text class="picker-title star">请假类型</text>
+            <view class="picker">
+               <text class="picker-tontent">{{typeArray[typeIndex]}} </text>
+               <text class="picker-select-flag" wx:if="{{leaveTypeFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeTime">
+         <view class="picker-item dept">
+            <text class="picker-title star">开始时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{startTime}} </text>
+               <text class="picker-select-flag" wx:if="{{startSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeEndTime">
+         <view class="picker-item dept">
+            <text class="picker-title star" >结束时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{endTime}} </text>
+               <text class="picker-select-flag" wx:if="{{endSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <!-- 天数 -->
+     <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">天数</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="daysValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{daysFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+           <!-- 请假事由 -->
+           <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">请假事由</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="overTimeValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{overTimeFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+      <!-- 审批人 -->
+      <picker class="dept-picker line_bottom" bindchange="bindCheckLeaderChange" value="{{checkIndex}}" range="{{chechArray}}">
+         <view class="picker-item dept">
+            <text class="picker-title star">审批人</text>
+            <view class="picker">
+               <text class="picker-tontent">{{chechArray[checkIndex]}} </text>
+               <text class="picker-select-flag" wx:if="{{leaderFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+    
+   </view> 
+   <view class="onSubmit">提交</view>
+</view>

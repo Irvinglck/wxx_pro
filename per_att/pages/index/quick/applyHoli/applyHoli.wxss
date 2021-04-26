@@ -3,23 +3,9 @@
    margin: 0 auto;
 }
 .header{
-   /* width: 96%;
-   height: 100rpx;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   font: 28rpx;
-   font-weight: 700;
-   line-height: 80rpx;
-   box-sizing: border-box;
-   padding: 0 14rpx;
-   background-color: #ffffff; */
    border-bottom: 0rpx solid;
 }
-/* .header >text:nth-child(2){
-   color: #5F75E2;
-   font-weight: 400;
-} */
+
 .preview{
    width: 100%;
    height: 240rpx;

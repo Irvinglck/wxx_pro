@@ -1,5 +1,6 @@
 {
   "pages":[
+    
     "pages/index/index",
     "pages/banDel/banDel",
     "pages/index/quick/check",

@@ -32,12 +32,6 @@ Page({
          backgroundColor: '#ffffff'
      });
    },
-   //部门弹窗显示
-   selectDept:function(){
-      this.setData({
-         deptShow:1
-      })
-   },
    //部门选择
    bindPickerChange: function(e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)

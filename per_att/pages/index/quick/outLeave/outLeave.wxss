@@ -1,1 +1,1 @@
-/* pages/index/quick/outLeave/outLeave.wxss */
+@import "/pages/index/quick/applyHoli/applyHoli.wxss"
