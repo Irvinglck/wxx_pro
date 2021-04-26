@@ -1,4 +1,5 @@
 Page({
+
    /**
     * 页面的初始数据
     */
@@ -9,7 +10,7 @@ Page({
       startSelectFlag:true,
       endSelectFlag:"true",
       daysFlag:true,
-      proFlag:true,
+      // proFlag:true,
       leaderFlag:true,
       overTimeFlag:true,
       startTime:'',
@@ -24,19 +25,12 @@ Page({
     */
    onLoad: function (options) {
       wx.setNavigationBarTitle({
-         title: '加班管理'
+         title: '调休管理'
      }); 
        wx.setNavigationBarColor({
          frontColor: '#000000',
          backgroundColor: '#ffffff'
      });
-   },
-
-   /**
-    * 生命周期函数--监听页面初次渲染完成
-    */
-   onReady: function () {
-
    },
    //部门弹窗显示
    selectDept:function(){
@@ -88,19 +82,6 @@ Page({
          })
       }    
     },
-    //项目名称
-    proValue:function(e){
-      this.data.proValueInput=e.detail.value;
-      // console.log(this.data.proFlag)
-      this.setData({
-         proFlag:false
-      })
-      if(this.data.proValueInput.length==0){
-         this.setData({
-            proFlag:true
-         })
-      }
-    },
    //加班内容
    overTimeValue:function(e){
       this.data.overTimeInputValue=e.detail.value;
@@ -113,6 +94,13 @@ Page({
          })
       }
    },
+   /**
+    * 生命周期函数--监听页面初次渲染完成
+    */
+   onReady: function () {
+
+   },
+
    /**
     * 生命周期函数--监听页面显示
     */
@@ -138,7 +126,7 @@ Page({
     * 页面相关事件处理函数--监听用户下拉动作
     */
    onPullDownRefresh: function () {
-      
+
    },
 
    /**

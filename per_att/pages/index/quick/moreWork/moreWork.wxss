@@ -1,8 +1,6 @@
-/* pages/index/quick/moreWork/moreWork.wxss */
 .container{
    width: 96%;
    margin: 0 auto;
-   /* border: 1px solid red; */
 }
 .header{
    width: 100%;
@@ -21,14 +19,8 @@
    color: #5F75E2;
    font-weight: 400;
 }
-/* .work-form > view{
-   width: 100%;
-   height: 100rpx;
-   
-   border-bottom: 1px solid #E4E4E4;
-   font-size: 36rpx;
-} */
-.work-form :nth-child(-n+2){
+
+.apply ,.userName{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -42,23 +34,59 @@
    /* border: 1rpx solid red; */
 }
 .picker-item{
+   box-sizing: border-box;
    /* border: 1rpx solid red; */
    width: 100%;
    height: 100rpx;
-   /* position: relative; */
    line-height: 100rpx;
+   display: flex;
+   padding: 0 8px;
+   
+}
+.picker-title{
+   /* margin-left: 14rpx; */
+   display: inline-block;
+   height: 100rpx;
+   width: 30%;
+   /* border: 1rpx solid red; */
+}
+.picker{
+   height: 100rpx;
+   width: 70%;
+   display: flex;
+   flex-direction: row-reverse;
 }
 
-.picker-tontent,.picker-select-flag{ 
-   margin-right: -26rpx;
-}
 .picker-select-flag{
-  
    color: #D9D9DB;
 }
-
+.star::after{
+   content: "*";
+   color: red;
+   display: inline-block;
+}
 .necess-flag {
    color: red;
+}
+.input-value{
+   width: 70%;
+   height: 100rpx;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   position: relative;
+
+}
+.inputDays{
+   width: 650rpx;
+   height: 100rpx;
+   text-align: right;
+   
+}
+.day-flag{
+   position: absolute;
+   right: 4rpx;
+   top: 6rpx;
 }
 .onSubmit{
    width: 80%;
@@ -71,6 +99,9 @@
    margin: 0 auto;
    color: #ffffff;
    margin-top: 40rpx;
+}
+.line_bottom{
+   border-bottom: 1px solid #EDEDED;
 }
 
 

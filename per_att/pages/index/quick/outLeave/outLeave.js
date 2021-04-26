@@ -1,4 +1,4 @@
-// pages/msg/msg.js
+// pages/index/quick/outLeave/outLeave.js
 Page({
 
    /**

@@ -1,7 +1,24 @@
 <view class="container">
    <view class="header">
-      <text>加班申请</text>
-      <text>加班历史</text>
+      <text>申请调休</text>
+      <text>调休历史</text>
+   </view>
+   <view class="preview">
+      <view class="common">
+        <view class="left-time">
+           <text class="time">68</text>
+           <text class="unit">小时</text>
+        </view>
+        <view class="intro">普通调休剩余</view>
+      </view>
+      <view class="special">
+         <view class="left-time">
+           <text class="time">0</text>
+           <text class="unit">小时</text>
+        </view>
+        <view class="intro">特殊调休剩余</view>
+
+      </view>
    </view>
    <view class="work-form">
       <view class="apply line_bottom">
@@ -51,16 +68,7 @@
          </view>
         </view>
       </view>
-      <!-- 项目名称 -->
-      <view class="dept-picker line_bottom">
-        <view class="picker-item dept">
-         <text class="picker-title star">项目名称</text>
-         <view class="input-value">
-            <input class="inputDays" bindinput="proValue"/>
-            <text class="picker-select-flag day-flag" wx:if="{{proFlag}}">请输入 ></text>
-         </view>
-        </view>
-      </view>
+ 
       <!-- 审批人 -->
       <picker class="dept-picker line_bottom" bindchange="bindCheckLeaderChange" value="{{checkIndex}}" range="{{chechArray}}">
          <view class="picker-item dept">
@@ -74,7 +82,7 @@
          <!-- 加班内容 -->
       <view class="dept-picker line_bottom">
         <view class="picker-item dept">
-         <text class="picker-title">加班内容</text>
+         <text class="picker-title">备注</text>
          <view class="input-value">
             <input class="inputDays" bindinput="overTimeValue"/>
             <text class="picker-select-flag day-flag" wx:if="{{overTimeFlag}}">请输入 ></text>
@@ -82,8 +90,5 @@
         </view>
       </view>
    </view> 
-
-
    <view class="onSubmit">提交</view>
-
 </view>

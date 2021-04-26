@@ -1,14 +1,12 @@
 {
   "pages":[
-    
-    
     "pages/index/index",
     "pages/banDel/banDel",
     "pages/index/quick/check",
     "pages/index/quick/moreWork/moreWork",
+    "pages/index/quick/applyHoli/applyHoli",
+    "pages/index/quick/outLeave/outLeave",
     "pages/work/work",
-    "pages/msg/msg",
-    "pages/contacts/contacts",
     "pages/mine/mine",
     "pages/logs/logs"
   ],
@@ -28,20 +26,7 @@
         "pagePath": "pages/work/work",
         "text": "我的工作"
       }
-      ,
-      {
-        "iconPath": "images/icon/msg.png",
-        "selectedIconPath": "images/icon/msg_sel.png",
-        "pagePath": "pages/msg/msg",
-        "text": "消息"
-      }
-      ,
-      {
-        "iconPath": "images/icon/contacts.png",
-        "selectedIconPath": "images/icon/contacts_sel.png",
-        "pagePath": "pages/contacts/contacts",
-        "text": "联系人"
-      }
+     
       ,
       {
         "iconPath": "images/icon/mine.png",

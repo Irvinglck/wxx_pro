@@ -1,5 +1,3 @@
-<!--pages/index/quick/check.wxml-->
-<!-- <text>pages/index/quick/check.wxml</text> -->
 <view class="container">
    <!-- 日历 -->
    <view class="cal">

@@ -57,7 +57,7 @@
         </navigator>
        
       </view>
-      <view class="quick">
+      <view class="quick" bindtap="moneyBindTap">
         <view class="quick-img">
           <image src="/images/quick/money.png" mode="widthFix"></image>
         </view>
@@ -66,20 +66,26 @@
         </view>
       </view>
       <view class="quick">
-        <view class="quick-img">
-          <image src="/images/quick/apply_holi.png" mode="widthFix"></image>
-        </view>
-        <view class="des">
-          <text class="info">调休</text>
-        </view>
+        <navigator url="/pages/index/quick/applyHoli/applyHoli">
+          <view class="quick-img">
+             <image src="/images/quick/apply_holi.png" mode="widthFix"></image>
+          </view>
+          <view class="des">
+             <text class="info">调休</text>
+          </view>
+        </navigator>
+      
       </view>
       <view class="quick">
-        <view class="quick-img">
-          <image src="/images/quick/out_tra.png" mode="widthFix"></image>
-        </view>
-        <view class="des">
-          <text class="info">请假</text>
-        </view>
+        <navigator url="/pages/index/quick/outLeave/outLeave">
+          <view class="quick-img">
+            <image src="/images/quick/out.png" mode="widthFix"></image>
+          </view>
+          <view class="des">
+            <text class="info">请假</text>
+          </view>
+        </navigator>
+       
       </view>
       <view class="quick">
         <view class="quick-img">
