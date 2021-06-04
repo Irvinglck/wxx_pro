@@ -6,9 +6,52 @@ Page({
    */
   data: {
     imgsUrl:[],
-    proId:''
-
+    proId:'',
+    swiper: {
+      indicatorDots: true,
+      autoplay: false,
+      interval: 5000,
+      duration: 1000,
+      current: 0,
+    },
+    leftShow:true,
+    
   },
+
+  prevImg: function() {
+    var swiper = this.data.swiper;
+    var current = swiper.current;
+    console.log("pre"+current)
+    if(current == 0){
+      this.setData({leftShow:true,})
+      return
+    }
+      
+    swiper.current = current > 0 ? current - 1 : this.data.imgsUrl.length - 1;
+    this.setData({
+      swiper: swiper,
+    })
+  },
+ 
+  nextImg: function() {
+    
+    var swiper = this.data.swiper;
+    var current = swiper.current;
+    console.log("next"+current)
+    if(current == this.data.imgsUrl.length - 1){
+      this.setData({
+        leftShow:false,
+      })
+      return
+    }
+      
+   
+    swiper.current = current < (this.data.imgsUrl.length - 1) ? current + 1 : 0;
+    this.setData({
+      swiper: swiper,
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

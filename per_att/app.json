@@ -1,11 +1,14 @@
 {
   "pages":[
     
+   
     "pages/index/index",
     "pages/banDel/banDel",
     "pages/index/quick/check",
     "pages/index/quick/moreWork/moreWork",
     "pages/index/quick/applyHoli/applyHoli",
+    "pages/index/quick/holiday/holiday",
+    "pages/index/quick/outTra/outTra",
     "pages/index/quick/outLeave/outLeave",
     "pages/work/work",
     "pages/mine/mine",

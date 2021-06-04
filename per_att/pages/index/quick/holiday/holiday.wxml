@@ -1,0 +1,100 @@
+<view class="container">
+   <view class="header">
+      <text>出差管理</text>
+      <text>出差历史</text>
+   </view>
+   <view class="work-form">
+      <view class="select-city-date">
+         <view class="start-addr sel">
+            <text class="city">选择城市</text>
+            <text class="date">选择日期</text> 
+         </view>
+         <view class="plane-img">
+            <image src="/images/temp/palane_icon.jpg"></image>
+         </view>
+         <view class="end-addr sel">
+            <text class="city">选择城市</text>
+            <text class="date">选择日期</text> 
+         </view>
+      </view>
+      
+      <text class="basic-info">基本信息</text>
+      <view class="apply line_bottom">
+         <text>申请人</text>
+         <text>李茹</text>
+      </view>
+      
+      <picker class="dept-picker  line_bottom" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+         <view class="picker-item dept">
+            <text class="picker-title">部门</text>
+            <view class="picker">
+               <text class="picker-tontent">{{array[index]}} </text>
+               <text class="picker-select-flag" wx:if="{{selectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeTime">
+         <view class="picker-item dept">
+            <text class="picker-title star">开始时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{startTime}} </text>
+               <text class="picker-select-flag" wx:if="{{startSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeEndTime">
+         <view class="picker-item dept">
+            <text class="picker-title star" >结束时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{endTime}} </text>
+               <text class="picker-select-flag" wx:if="{{endSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <!-- 天数 -->
+     <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">天数</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="daysValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{daysFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+      <!-- 项目名称 -->
+      <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">项目名称</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="proValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{proFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+      <!-- 审批人 -->
+      <picker class="dept-picker line_bottom" bindchange="bindCheckLeaderChange" value="{{checkIndex}}" range="{{chechArray}}">
+         <view class="picker-item dept">
+            <text class="picker-title star">审批人</text>
+            <view class="picker">
+               <text class="picker-tontent">{{chechArray[checkIndex]}} </text>
+               <text class="picker-select-flag" wx:if="{{leaderFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+         <!-- 加班内容 -->
+      <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title">加班内容</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="overTimeValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{overTimeFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+   </view> 
+
+
+   <view class="onSubmit">提交</view>
+
+</view>

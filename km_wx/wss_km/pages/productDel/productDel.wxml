@@ -1,8 +1,9 @@
 <!--pages/productDel/productDel.wxml-->
 <view class="container">
   <scroll-view scroll-y="true">
-    <swiper class="swiper" circular="true"
-      autoplay="true">
+    <swiper class="swiper" circular="true"  autoplay="true" 
+      indicator-dots='{{swiper.indicatorDots}}' autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{swiper.current}}"
+      >
       <view class="banner" wx:for="{{imgsUrl}}" wx:key="index">
         <swiper-item>
           <view class="pro-img">
@@ -11,8 +12,15 @@
           </view>
         </swiper-item>
       </view>
-    
     </swiper>
-    
+    <view class='ceshi_next' bindtap='prevImg'>
+      <image wx:if="{{swiper.current}}" src="../../images/pro/right.png"></image>
+     
+      <!-- <text class='icon iconfont icon-you'></text> -->
+    </view>
+    <view class='ceshi_prew' bindtap='nextImg'>
+      <image wx:if="{{leftShow}}"  src="../../images/pro/left.png"></image>
+      <!-- <text class='icon iconfont icon-zuo'></text> -->
+    </view>
   </scroll-view>
 </view>

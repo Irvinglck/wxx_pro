@@ -88,25 +88,30 @@
        
       </view>
       <view class="quick">
+      <navigator url="/pages/index/quick/holiday/holiday">
         <view class="quick-img">
           <image src="/images/quick/holiday.png" mode="widthFix"></image>
         </view>
         <view class="des">
           <text class="info">出差</text>
         </view>
+      </navigator>
+      
       </view>
       <view class="quick">
+        <navigator url="/pages/index/quick/outTra/outTra">
         <view class="quick-img">
           <image src="/images/quick/out_tra.png" mode="widthFix"></image>
         </view>
         <view class="des">
           <text class="info">外出</text>
         </view>
+      </navigator>
       </view>
       <view class="quick">
         <view class="quick-img">
           <image src="/images/quick/more.png" mode="widthFix"></image>
-        </view>
+       </view>
         <view class="des">
           <text class="info">更多</text>
         </view>

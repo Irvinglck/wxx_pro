@@ -1,4 +1,6 @@
+// pages/index/quick/outTra/outTra.js
 Page({
+
    /**
     * 页面的初始数据
     */
@@ -24,21 +26,13 @@ Page({
     */
    onLoad: function (options) {
       wx.setNavigationBarTitle({
-         title: '加班管理'
+         title: '外出管理'
      }); 
        wx.setNavigationBarColor({
          frontColor: '#000000',
          backgroundColor: '#ffffff'
      });
    },
-
-   /**
-    * 生命周期函数--监听页面初次渲染完成
-    */
-   onReady: function () {
-
-   },
-
    //部门选择
    bindPickerChange: function(e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -109,6 +103,13 @@ Page({
       }
    },
    /**
+    * 生命周期函数--监听页面初次渲染完成
+    */
+   onReady: function () {
+
+   },
+
+   /**
     * 生命周期函数--监听页面显示
     */
    onShow: function () {
@@ -133,7 +134,7 @@ Page({
     * 页面相关事件处理函数--监听用户下拉动作
     */
    onPullDownRefresh: function () {
-      
+
    },
 
    /**

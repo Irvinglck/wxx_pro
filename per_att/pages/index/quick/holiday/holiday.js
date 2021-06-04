@@ -1,4 +1,6 @@
+// pages/index/quick/holiday/holiday.js
 Page({
+
    /**
     * 页面的初始数据
     */
@@ -24,7 +26,7 @@ Page({
     */
    onLoad: function (options) {
       wx.setNavigationBarTitle({
-         title: '加班管理'
+         title: '出差管理'
      }); 
        wx.setNavigationBarColor({
          frontColor: '#000000',
@@ -38,9 +40,8 @@ Page({
    onReady: function () {
 
    },
-
-   //部门选择
-   bindPickerChange: function(e) {
+    //部门选择
+    bindPickerChange: function(e) {
       console.log('picker发送选择改变，携带值为', e.detail.value)
       this.setData({
         index: e.detail.value,
@@ -108,6 +109,7 @@ Page({
          })
       }
    },
+
    /**
     * 生命周期函数--监听页面显示
     */
@@ -133,7 +135,7 @@ Page({
     * 页面相关事件处理函数--监听用户下拉动作
     */
    onPullDownRefresh: function () {
-      
+
    },
 
    /**

@@ -1,0 +1,90 @@
+<view class="container">
+   <view class="header">
+      <text>外出申请</text>
+      <text>外出历史</text>
+   </view>
+   <view class="work-form">
+      <view class="apply line_bottom">
+         <text>申请人</text>
+         <text>李茹</text>
+      </view>
+      <view class="userName line_bottom">
+         <text>用户名</text>
+         <text>lck</text>
+      </view>
+      
+      <picker class="dept-picker  line_bottom" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+         <view class="picker-item dept">
+            <text class="picker-title">部门</text>
+            <view class="picker">
+               <text class="picker-tontent">{{array[index]}} </text>
+               <text class="picker-select-flag" wx:if="{{selectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeTime">
+         <view class="picker-item dept">
+            <text class="picker-title star">开始时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{startTime}} </text>
+               <text class="picker-select-flag" wx:if="{{startSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <picker class="dept-picker line_bottom" mode="time" bindchange="bindchangeEndTime">
+         <view class="picker-item dept">
+            <text class="picker-title star" >结束时间</text>
+            <view class="picker">
+               <text class="picker-tontent">{{endTime}} </text>
+               <text class="picker-select-flag" wx:if="{{endSelectFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+      <!-- 天数 -->
+     <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">外出时间</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="daysValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{daysFlag}}">请输入外出时间(小时) ></text>
+         </view>
+        </view>
+      </view>
+           <!-- 加班内容 -->
+      <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title">外出事由</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="overTimeValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{overTimeFlag}}">请输入外出事由 ></text>
+         </view>
+        </view>
+      </view>
+      <!-- 项目名称 -->
+      <view class="dept-picker line_bottom">
+        <view class="picker-item dept">
+         <text class="picker-title star">项目名称</text>
+         <view class="input-value">
+            <input class="inputDays" bindinput="proValue"/>
+            <text class="picker-select-flag day-flag" wx:if="{{proFlag}}">请输入 ></text>
+         </view>
+        </view>
+      </view>
+      <!-- 审批人 -->
+      <picker class="dept-picker line_bottom" bindchange="bindCheckLeaderChange" value="{{checkIndex}}" range="{{chechArray}}">
+         <view class="picker-item dept">
+            <text class="picker-title star">审批人</text>
+            <view class="picker">
+               <text class="picker-tontent">{{chechArray[checkIndex]}} </text>
+               <text class="picker-select-flag" wx:if="{{leaderFlag}}">请选择 ></text>
+            </view>
+         </view>
+      </picker>
+    
+   </view> 
+
+
+   <view class="onSubmit">提交</view>
+
+</view>
